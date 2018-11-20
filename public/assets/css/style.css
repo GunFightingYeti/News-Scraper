@@ -1,0 +1,92 @@
+body {
+    color: white;
+}
+
+.logo {
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.navbar {
+    background-color: rgb(0, 106, 192);
+}
+
+.jumbotron {
+    background-image: url(../images/newspaper-background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(22, 22, 22);
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(22, 22, 22);
+    border-top-width: 1px;
+}
+
+h1 {
+    color: #a14007;
+    font-size: 4rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
+}
+
+p {
+    color: #a14007;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.background-box {
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: inset 24em 0rem 5rem -3rem rgb(197, 194, 194);
+    float: left;
+}
+
+a {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+a:hover {
+    color: #a14007;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+}
+
+.btn-danger {
+    background-color: rgb(200, 0, 0);
+    border-color: rgb(22, 22, 22);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.btn-danger:hover {
+    background-color: rgb(155, 0, 0);
+    border-color: rgb(22, 22, 22);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.articles {
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
