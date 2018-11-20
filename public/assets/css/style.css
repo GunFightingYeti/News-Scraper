@@ -58,7 +58,6 @@ a {
 a:hover {
     color: #a14007;
     text-shadow: 1px 1px 1px black;
-    text-decoration: underline;
 }
 
 .btn-danger {
@@ -82,6 +81,7 @@ a:hover {
     padding-bottom: 10px;
     text-align: center;
     height: auto;
+    margin-bottom: 30px;
 }
 
 .navbar-toggler-icon {
