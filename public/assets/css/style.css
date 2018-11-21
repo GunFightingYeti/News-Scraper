@@ -62,11 +62,13 @@ p {
 a {
     color: white;
     text-shadow: 1px 1px 1px black;
+    text-decoration: none;
 }
 
 a:hover {
     color: #a14007;
     text-shadow: 1px 1px 1px black;
+    text-decoration: none;
 }
 
 .btn-danger {
@@ -74,8 +76,9 @@ a:hover {
     border-color: rgb(22, 22, 22);
     border-width: .5px;    
     border-style: solid;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    text-decoration: none;
 }
 
 .btn-danger:hover {
@@ -83,8 +86,9 @@ a:hover {
     border-color: rgb(22, 22, 22);
     border-width: .5px;
     border-style: solid;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    text-decoration: none;
 }
 
 .articles {
