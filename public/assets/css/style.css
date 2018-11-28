@@ -57,6 +57,7 @@ p {
     border-radius: 10px;
     box-shadow: inset 24em 0rem 5rem -3rem rgb(197, 194, 194);
     float: left;
+    margin-left: 30px;
 }
 
 a {
