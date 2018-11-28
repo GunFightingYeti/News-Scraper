@@ -48,7 +48,6 @@ p {
     color: #a14007;
     font-size: 1.3rem;
     text-shadow: 1px 1px 1px black;
-
 }
 
 .background-box {
@@ -92,7 +91,7 @@ a:hover {
     text-decoration: none;
 }
 
-.articles {
+#articles {
     background-color: rgb(255, 196, 0);
     border-radius: 10px;
     padding-top: 20px;
