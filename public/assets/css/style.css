@@ -1,5 +1,6 @@
 body {
     color: white;
+    background-color: #ffffff;
 }
 
 .logo {
@@ -91,12 +92,34 @@ a:hover {
     text-decoration: none;
 }
 
-#articles {
-    background-color: rgb(255, 196, 0);
+#articleBackground {
+    background-color: rgb(177, 177, 177);
+    background-image: url(../images/bg1.png);
     border-radius: 10px;
+    border-style: solid;
+    border-color: black;
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
     height: auto;
     margin-bottom: 30px;
+}
+
+.article {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin: 10px;
+    list-style-type: none;
+    margin-right: 50px;
+    color: #a14007;
+    text-shadow: 1px 1px 1px black;
+}
+
+.article h2 {
+    color: black;
+    color: #a14007;
+    text-shadow: 1px 1px 1px black;
 }
