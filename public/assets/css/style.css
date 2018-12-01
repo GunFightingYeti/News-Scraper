@@ -113,6 +113,7 @@ a:hover {
     margin-right: 50px;
     color: #a14007;
     text-shadow: 1px 1px 1px black;
+    padding: 10px;
 }
 
 .article img {

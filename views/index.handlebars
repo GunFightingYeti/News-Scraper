@@ -1,36 +1,50 @@
  <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="https://gunfightingyeti.github.io/Assignment3/Bootstrap%20Website/index.html" target="_blank">
-            <img class="logo" src="./assets/images/apple-icon-57.png" width="50" height="50" alt="Tim Lewis Logo">
-        </a>
-        <div class="navbar-brand ml-2 title">News Scraper</div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active ml-2">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ml-2" href="/saved">Saved Articles</a>
-                </li>
-                <li class="nav-item ml-2">
-                    <a href="/scrape"><button class="nav-link btn btn-danger"><i class="far fa-newspaper"></i> Scrape New Articles</button></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container background-box">
-            <h1>News Scraper</h1>
-            <p>All the news that's fit to scrape.</p>
-        </div>
+    <a class="navbar-brand" href="https://gunfightingyeti.github.io/Assignment3/Bootstrap%20Website/index.html" target="_blank">
+        <img class="logo" src="./assets/images/apple-icon-57.png" width="50" height="50" alt="Tim Lewis Logo">
+    </a>
+    <div class="navbar-brand ml-2 title">News Scraper</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active ml-2">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-2" href="/saved">Saved Articles</a>
+            </li>
+            <li class="nav-item ml-2">
+                <a href="/scrape"><button class="nav-link btn btn-danger"><i class="far fa-newspaper"></i> Scrape New Articles</button></a>
+            </li>
+        </ul>
     </div>
+</nav>
 
-    <div class="container">
-        <div id="articleBackground">
-            <p>Push the red button to scrape for new articles.</p>
-        </div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container background-box">
+        <h1>News Scraper</h1>
+        <p>All the news that's fit to scrape.</p>
     </div>
+</div>
+
+<div class="container">
+    <div id="articleBackground">
+        <p>Push the red button to scrape for new articles.</p>
+
+        <h3>Saved Articles</h3>
+            <ul>
+            {{#each dbSaved}}
+                <li class="article" >
+                <h2>{{this.title}}</h2>
+                <img src={{this.image}} alt="{{this.title}}">
+                <p>{{this.excerpt}}</p>
+                <a href="{{this.link}}"><h3>Read the whole story</h3></a>
+                <a class="btn btn-danger" id="save" data-attribute="{{this._id}}">Delete from Saved</a>
+                <a class="btn btn-info" id="notes">Notes</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

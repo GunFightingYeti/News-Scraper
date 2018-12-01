@@ -32,7 +32,17 @@ mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
 
 // Routes
 app.get("/", function (req, res) {
-    res.render("index");
+
+    // Create a new Article using the `result` object built from scraping
+    db.Article.find({saved: true})
+    .then(function (dbSaved) {
+      res.render("index", {dbSaved: dbSaved});
+    })
+    .catch(function (err) {
+    // If an error occurred, log it
+    console.log(err);
+    });
+
 });
 
 // A GET route for scraping the website
@@ -81,6 +91,7 @@ app.get("/scrape", function (req, res) {
         });
 
         array.push(result);
+        console.log(result._id);
         
     });
     res.render("scrape", {dbArticle: array});
@@ -92,16 +103,16 @@ app.get("/scrape", function (req, res) {
 app.get("/saved", function (req, res) {
   var array = [];
 
-  // Create a new Article using the `result` object built from scraping
-  db.Saved.find({})
-  .then(function (dbSaved) {
+  // // Create a new Article using the `result` object built from scraping
+  // db.Saved.find({})
+  // .then(function (dbSaved) {
 
-      array.push(result);
-  })
-  .catch(function (err) {
-      // If an error occurred, log it
-      console.log(err);
-  });
+  //     array.push(result);
+  // })
+  // .catch(function (err) {
+  //     // If an error occurred, log it
+  //     console.log(err);
+  // });
 
   res.render("saved", {dbSaved: array});
 });
