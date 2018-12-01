@@ -9,7 +9,7 @@ body {
 
 .title {
     font-size: 2rem;
-    text-shadow: 2px 1px 4px black
+    text-shadow: 2px 1px 4px black;
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body {
 }
 
 .jumbotron {
-    background-image: url(../images/newspaper-background.jpg);
+    background-image: url("../images/newspaper-background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,10 +52,9 @@ p {
 }
 
 .background-box {
-    padding: 10px;
-    padding-left: 20px;
+    padding: 10px 10px 10px 20px;
     border-radius: 10px;
-    box-shadow: inset 24em 0rem 5rem -3rem rgb(197, 194, 194);
+    box-shadow: inset 24em 0 5rem -3rem rgb(197, 194, 194);
     float: left;
     margin-left: 30px;
 }
@@ -65,7 +64,6 @@ a {
     text-shadow: 1px 1px 1px black;
     text-decoration: none;
 }
-
 a:hover {
     color: #a14007;
     text-shadow: 1px 1px 1px black;
@@ -75,17 +73,16 @@ a:hover {
 .btn-danger {
     background-color: rgb(200, 0, 0);
     border-color: rgb(22, 22, 22);
-    border-width: .5px;    
+    border-width: 0.5px;
     border-style: solid;
     padding-right: 10px !important;
     padding-left: 10px !important;
     text-decoration: none;
 }
-
 .btn-danger:hover {
     background-color: rgb(155, 0, 0);
     border-color: rgb(22, 22, 22);
-    border-width: .5px;
+    border-width: 0.5px;
     border-style: solid;
     padding-right: 10px !important;
     padding-left: 10px !important;
@@ -94,7 +91,7 @@ a:hover {
 
 #articleBackground {
     background-color: rgb(177, 177, 177);
-    background-image: url(../images/bg1.png);
+    background-image: url("../images/bg1.png");
     border-radius: 10px;
     border-style: solid;
     border-color: black;
@@ -118,8 +115,42 @@ a:hover {
     text-shadow: 1px 1px 1px black;
 }
 
+.article img {
+    height: 300px;
+    width: 400px;
+}
+
 .article h2 {
     color: black;
     color: #a14007;
     text-shadow: 1px 1px 1px black;
 }
+
+.article h3 {
+    color: black;
+    color: #a14007;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+}
+
+li {
+    padding: 15px 0;
+}
+
+/* 
+footer {
+    background-color: #222;
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+footer a, p {
+    font-size: 1.7em;
+    color: #a14007;
+} */

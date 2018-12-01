@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active ml-2">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link ml-2" href="/saved">Saved Articles</a>
@@ -28,16 +28,18 @@
 
 <div class="container">
     <div id="articleBackground">
-        <button id="clear" class="btn btn-info">Clear All Articles</button>
+        {{!-- <button id="clear" class="btn btn-info">Clear All Articles</button> --}}
+        <h1>Current Articles</h1>
         <ul>
         {{#each dbArticle}}
             <li class="article" >
-            <h2>Title: {{this.title}}</h2>
-            <p>Link: {{this.link}}</p>
-            <img src={{this.image}}>
-            <p>Description: {{this.excerpt}}</p>
+            <a href="{{this.link}}"></a><h2>{{this.title}}</h2></a>
+            <img src={{this.image}} alt="{{this.title}}">
+            <p>{{this.excerpt}}</p>
+            <a class="btn btn-outline-warning" id="save">Save to My Articles</a>
             </li>
         {{/each}}
         </ul>
+        <a class="nav-link" href="/scrape">Return to top</a>
     </div>
 </div>
