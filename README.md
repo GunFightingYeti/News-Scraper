@@ -4,7 +4,7 @@
 Image
 <kbd>![Home page](./public/assets/images/nsHome7by5.png "Home page")</kbd>
 
-## News Scraper collects all the movie news you'll ever need and displays it in one place.
+## News Scraper, all the movie news you'll ever need displayed in one place.
 #### This application scrapes the Screen Rant home page for movie news and articles and saves them in a mongo database.  It then displays those articles in an easy to read layout while also giving you the ability to save articles that you find  interesting as well as write notes and attach them to each article.
 
 ### How to use News Scraper
