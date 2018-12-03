@@ -1,5 +1,5 @@
 # News Scraper
-[Try it for yourself!](www.deployed-site.com "News Scraper")
+[Try it for yourself!](https://agile-garden-25337.herokuapp.com/ "News Scraper")
 
 Image
  ![Home page](./imagelink.png "Home page")
@@ -23,7 +23,7 @@ Image
 ## Prerequisites:
 * Command Line interface
 * NodeJS
-* MySQL Workbench or equivalent program
+* Mongo db or equivalent program
 * Web Browser
 
 

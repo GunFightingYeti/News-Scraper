@@ -3,6 +3,10 @@ body {
     background-color: #ffffff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+   text-shadow: 1px 1px 1px black;
+}
+
 .logo {
     border-radius: 5px;
 }
@@ -118,11 +122,9 @@ a:hover {
 
 .article img {
     height: 300px;
-    width: 400px;
 }
 
 .article h2 {
-    color: black;
     color: #a14007;
     text-shadow: 1px 1px 1px black;
 }
@@ -135,7 +137,7 @@ a:hover {
 }
 
 li {
-    padding: 15px 0;
+    padding: 0 0;
 }
 
 /* 
