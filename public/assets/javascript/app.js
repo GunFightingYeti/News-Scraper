@@ -10,6 +10,8 @@ $(document).on("click", ".save", function() {
   }).then(function(data) {
     console.log("Data: " + data);
   })
+
+  $(this).html("Saved!");
 });
   
 $(document).on("click", ".remove", function() {
@@ -23,7 +25,7 @@ $(document).on("click", ".remove", function() {
   }).then(function(data) {
     console.log("Data: " + data);
   })
-  
+
   location.reload()
 
 });
