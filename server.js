@@ -100,28 +100,23 @@ app.get("/saved", function (req, res) {
 
 // Route for grabbing a specific Article by id, populate it with it's note
 app.get("/save/:id", function (req, res) {
-  // Using the id passed in the id parameter, prepare a query that finds the
-  // matching one in our db...
 
-  // db.Article.findOneAndUpdate(
-  //   {_id: req.params.id},
-  //   {$set: {saved: true}})
-  //   console.log("A thing happened!")
-  //   .catch(function (err) {
-  //     res.json(err);
-  //   });
+  db.Article.findOneAndUpdate(
+    {_id: req.params.id},
+    {$set: {saved: true}})
+    .catch(function (err) {
+      res.json(err);
+    });
   });
   
   // Route for getting all Articles from the db
-  app.get("/remove", function (req, res) {
-    // Grab every document in the Articles collection
-    // db.Article.find({})
-    // .then(function (dbArticle) {
-    //     res.json(dbArticle);
-    // })
-    // .catch(function (err) {
-    //     res.json(err);
-    // });
+  app.get("/remove/:id", function (req, res) {
+
+    db.Article.remove(
+      {_id: req.params.id})
+      .catch(function (err) {
+        res.json(err);
+      });
   });
 
 // Route for saving/updating an Article's associated Note
