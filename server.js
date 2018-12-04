@@ -70,10 +70,17 @@ app.get("/scrape", function (req, res) {
           .children("p")
           .text();
 
-        db.Article.create(result).then(function (res) {
-        })
+        db.Article.create(result)
         .catch(function (err) {
+        console.log(err);
         });
+    });
+     db.Article.find({})
+    .then(function (all) {
+      res.render("scrape", {dbArticle: all});
+    })        
+    .catch(function (err) {
+    console.log(err);
     });
     db.Article.find({})
     .then(function (all) {
