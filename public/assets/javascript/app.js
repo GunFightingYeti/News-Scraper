@@ -1,5 +1,4 @@
 
-
 $(document).on("click", ".save", function() {
   console.log("Save button clicked!");
   var thisId = $(this).attr("data-id");
@@ -7,7 +6,9 @@ $(document).on("click", ".save", function() {
   // $.ajax({
   //   method: "GET",
   //   url: "/save" + thisId
-  // })  
+  // }).then(function(data) {
+  //   console.log("Data: " + data);
+  // })
 });
   
 $(document).on("click", ".remove", function() {

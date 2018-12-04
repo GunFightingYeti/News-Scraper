@@ -22,9 +22,9 @@ var ArticleSchema = new Schema({
     unique: true
   },
   excerpt: {
-    type: String,
-    required: true,
-    unique: true
+    type: String//,
+    //required: true//,
+   // unique: true
   },
   saved: {
     type: Boolean,
