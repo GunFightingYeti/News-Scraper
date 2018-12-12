@@ -147,3 +147,7 @@ height: auto;
 li {
     padding: 0 0;
 }
+
+img {
+    max-width: 600px;
+}

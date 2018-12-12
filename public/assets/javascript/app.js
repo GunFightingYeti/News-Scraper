@@ -22,7 +22,15 @@ $(document).on("click", ".remove", function() {
   }).then(function(data) {
   })
 
-  location.reload()
+  var anchor = $("li");
+
+  $.each(anchor, (i, val) => {
+
+    console.log($(val));
+      if ($(val).attr("data-id") === thisId) {
+        $(val).remove()
+    }
+  });
 });
 
 // Whenever someone clicks a p tag
