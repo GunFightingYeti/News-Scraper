@@ -10,6 +10,16 @@ $(document).on("click", ".save", function() {
   })
 
   $(this).html("Saved!");
+
+  var anchor = $("li");
+
+  $.each(anchor, (i, val) => {
+
+    console.log($(val));
+      if ($(val).attr("data-id") === thisId) {
+        $(val).remove()
+    }
+  });
 });
   
 // Remove an article from saved

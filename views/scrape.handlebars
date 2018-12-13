@@ -28,7 +28,7 @@
         <h1>Fresh Squeezed Articles</h1>
         <ul>
             {{#each dbArticle}}
-                <li class="article" >
+                <li class="article" data-id="{{this._id}}">
                 <a href="https://screenrant.com{{this.link}}" target="_blank"><h2>{{this.title}}</h2></a>
                 <a href="https://screenrant.com{{this.link}}" target="_blank"></a><img src={{this.image}} alt="{{this.title}}"></a>
                 <p>{{this.excerpt}}</p>
